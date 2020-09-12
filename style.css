@@ -69,11 +69,13 @@ main article div p {
 }
 
 main article small {
-  font-family: 
+  font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   writing-mode: vertical-rl;
   margin-left: 10px;
   margin-top: 15px;
+  font-weight: bolder;
+  letter-spacing: 2px;
 }
 
 main .down-container {
