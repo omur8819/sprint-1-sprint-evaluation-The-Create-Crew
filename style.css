@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://www.fonttr.com/fontDeta?font=comic");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+
+body {
+  padding: 2rem;
+}
+
+
+header {
+  width: 80vw;
+
+  margin-bottom: 4rem;
+  padding-left: 2.5rem;
+}
+
+header h1 {
+  font-size: 50px;
+  font-family: "Pt Serif", serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+header h2 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+header p {
+  font-size: 65%;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: grid;
+
+  grid-template-columns: 40% 40%;
+  column-gap: 1.5rem;
+  justify-content: space-around;
+}
+
+main article {
+  display: flex;
+  align-items: flex-start;
+}
+
+main article div img {
+  width: 100%;
+  height: auto;
+}
+
+main article div p {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+main article small {
+  font-family: 
+  font-size: 20px;
+  writing-mode: vertical-rl;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+main .down-container {
+  margin-top: 7rem;
+}
+
+/*#endregion*/
+
+footer {
+  margin-top: 70px;
+}
+
+footer p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+
+  color: gray;
+
+  text-align: center;
+}
+
+@media (min-width: 1700px) {
+  body header div {
+    width: 25% !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  body header div {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  header {
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 0;
+    margin-bottom: 130px;
+  }
+
+  header h1 {
+    font-size: 36px;
+
+    margin: 0;
+  }
+
+  header div {
+    width: 35%;
+
+    margin-left: 175px;
+    padding-right: 50px;
+    padding: 0;
+  }
+
+  header div h2 {
+    font-size: 18px;
+  }
+
+  header div p {
+    font-size: 18px;
+  }
+
+  main {
+    width: 50vw;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 0;
+  }
+
+  main .down-container {
+    margin-top: 0;
+  }
+
+  main .down-container-desktop {
+    margin-top: 150px;
+  }
+
+  main article div img {
+    width: 250px;
+    height: 350px;
+  }
+}
